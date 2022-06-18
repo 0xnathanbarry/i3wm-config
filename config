@@ -34,7 +34,7 @@ exec --no-startup-id dex --autostart --environment i3
 # bindsym Ctrl+Shift+Print exec --no-startup-id maim --select | xclip -selection clipboard -t image/png
 
 # OSX-like area selection screenshots
-bindsym --release Print exec scrot -s 'screenshot_%Y%m%d_%H%M%S.png' -e 'mkdir -p ~/Pictures/screenshots && mv $f ~/Pictures/screenshots && xclip -selection clipboard -t image/png -i ~/Pictures/screenshots/`ls -1 -t ~/Pictures/screenshots | head -1`' # Area selection
+bindsym --release Print exec scrot -s 'screenshot_%Y%m%d_%H%M%S.png' -e 'mkdir -p ~/Downloads/Screenshots && mv $f ~/Downloads/Screenshots && xclip -selection clipboard -t image/png -i ~/Downloads/Screenshots/`ls -1 -t ~/Downloads/Screenshots | head -1`' # Area selection
 
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
